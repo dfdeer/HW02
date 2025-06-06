@@ -1,9 +1,10 @@
 #ifndef ANIMAL_H_
-#define ANMAL_H_
+#define ANIMAL_H_
 
 class Animal {
 public:
 	virtual void makeSound() {};
+	virtual ~Animal() {};
 };	
 class Dog : public Animal {
 public:
@@ -12,7 +13,7 @@ public:
 class Cat : public Animal {
 public:
 	void makeSound();
-};
+};	
 class Cow : public Animal {
 public:
 	void makeSound();
